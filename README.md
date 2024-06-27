@@ -1,6 +1,6 @@
-# VEMSMA
+# VEMSMA Voting ensemble learning based prediction of microRNA – small molecule associations
 
-Voting ensemble learning based prediction of microRNA – small molecule associations
+
 
 PCA (Principal Component Analysis) was performed, with a cumulative variance of 95% to minimize the number of dimensions for further analysis
 
