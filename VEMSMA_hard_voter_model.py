@@ -25,7 +25,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.20)
 clf5 = GaussianNB()
 clf4 = MLPClassifier(hidden_layer_sizes=(64,), max_iter=50, warm_start=True)
 clf3 = KNeighborsClassifier(n_neighbors=20)
-clf2 = RandomForestClassifier(n_estimators=1, max_depth=10)
+clf2 = RandomForestClassifier(n_estimators=10, max_depth=10)
 clf1 = SVC(kernel='linear', probability=True,max_iter=60)
 
 voting_classifier_hard = VotingClassifier(estimators=[('svm', clf1), ('rf', clf2), ('knn', clf3), ('ann', clf4), ('gnb', clf5)], voting='hard')
